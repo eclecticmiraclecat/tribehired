@@ -14,5 +14,5 @@ counter_comments = Counter(comment['postId'] for comment in comments)
 
 with_comments = [{'id': post['id'], 'title': post['title'], 'body': post['body'], 'total_comments': counter_comments[post['id']]} for post in posts]
 
-print(with_comments)
+pprint(with_comments)
 
